@@ -1,0 +1,385 @@
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url(../assets/fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
+}
+
+.introOverlay {
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: introductionOS 5s ease;
+          animation: introductionOS 5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.introOverlay .startupcat {
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  opacity: 0.5;
+}
+
+.introOverlay p {
+  text-align: center;
+  font-family: "VCR OSD Mono";
+  color: white;
+  font-size: 15px;
+  -webkit-animation: textShadow 1.6s infinite;
+          animation: textShadow 1.6s infinite;
+}
+
+.introOverlay .titleIntro {
+  font-size: 80px;
+}
+
+.introOverlay .subtitleIntro {
+  margin-top: 15%;
+}
+
+.introOverlay #under {
+  font-size: 25px;
+}
+
+.introOverlay::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0.28;
+  }
+  5% {
+    opacity: 0.35;
+  }
+  10% {
+    opacity: 0.24;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.19;
+  }
+  25% {
+    opacity: 0.84;
+  }
+  30% {
+    opacity: 0.65;
+  }
+  35% {
+    opacity: 0.68;
+  }
+  40% {
+    opacity: 0.26;
+  }
+  45% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 0.96;
+  }
+  55% {
+    opacity: 0.086;
+  }
+  60% {
+    opacity: 0.20;
+  }
+  65% {
+    opacity: 0.72;
+  }
+  70% {
+    opacity: 0.53;
+  }
+  75% {
+    opacity: 0.37;
+  }
+  80% {
+    opacity: 0.71;
+  }
+  85% {
+    opacity: 0.70;
+  }
+  90% {
+    opacity: 0.70;
+  }
+  95% {
+    opacity: 0.36;
+  }
+  100% {
+    opacity: 0.24;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.28;
+  }
+  5% {
+    opacity: 0.35;
+  }
+  10% {
+    opacity: 0.24;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.19;
+  }
+  25% {
+    opacity: 0.84;
+  }
+  30% {
+    opacity: 0.65;
+  }
+  35% {
+    opacity: 0.68;
+  }
+  40% {
+    opacity: 0.26;
+  }
+  45% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 0.96;
+  }
+  55% {
+    opacity: 0.086;
+  }
+  60% {
+    opacity: 0.20;
+  }
+  65% {
+    opacity: 0.72;
+  }
+  70% {
+    opacity: 0.53;
+  }
+  75% {
+    opacity: 0.37;
+  }
+  80% {
+    opacity: 0.71;
+  }
+  85% {
+    opacity: 0.70;
+  }
+  90% {
+    opacity: 0.70;
+  }
+  95% {
+    opacity: 0.36;
+  }
+  100% {
+    opacity: 0.24;
+  }
+}
+
+.introOverlay::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  -webkit-animation: flicker 0.15s infinite;
+          animation: flicker 0.15s infinite;
+}
+
+@-webkit-keyframes introductionOS {
+  0% {
+    opacity: 0%;
+  }
+  20% {
+    visibility: visible;
+    opacity: 100%;
+  }
+  80% {
+    visibility: visible;
+    opacity: 100%;
+  }
+  100% {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0%;
+  }
+}
+
+@keyframes introductionOS {
+  0% {
+    opacity: 0%;
+  }
+  20% {
+    visibility: visible;
+    opacity: 100%;
+  }
+  80% {
+    visibility: visible;
+    opacity: 100%;
+  }
+  100% {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0%;
+  }
+}
+
+@-webkit-keyframes textShadow {
+  0% {
+    text-shadow: 0.44px 0 1px rgba(0, 30, 255, 0.5), -0.438px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.79px 0 1px rgba(0, 30, 255, 0.5), -2.792px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.03px 0 1px rgba(0, 30, 255, 0.5), -0.0295px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.4px 0 1px rgba(0, 30, 255, 0.5), -0.4021px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.48px 0 1px rgba(0, 30, 255, 0.5), -3.477px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.61px 0 1px rgba(0, 30, 255, 0.5), -1.612px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7px 0 1px rgba(0, 30, 255, 0.5), -0.701px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.9px 0 1px rgba(0, 30, 255, 0.5), -3.89px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.87px 0 1px rgba(0, 30, 255, 0.5), -3.87px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.23px 0 1px rgba(0, 30, 255, 0.5), -2.231px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.084px 0 1px rgba(0, 30, 255, 0.5), -0.08084px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.37px 0 1px rgba(0, 30, 255, 0.5), -2.3758px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.2px 0 1px rgba(0, 30, 255, 0.5), -2.202px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.863px 0 1px rgba(0, 30, 255, 0.5), -2.8638px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.4887px 0 1px rgba(0, 30, 255, 0.5), -0.48874px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.894px 0 1px rgba(0, 30, 255, 0.5), -1.8948px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.083px 0 1px rgba(0, 30, 255, 0.5), -0.0833px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.097px 0 1px rgba(0, 30, 255, 0.5), -0.0976px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.44px 0 1px rgba(0, 30, 255, 0.5), -3.44px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.184px 0 1px rgba(0, 30, 255, 0.5), -2.184px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.62px 0 1px rgba(0, 30, 255, 0.5), -2.62px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+}
+
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.44px 0 1px rgba(0, 30, 255, 0.5), -0.438px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.79px 0 1px rgba(0, 30, 255, 0.5), -2.792px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.03px 0 1px rgba(0, 30, 255, 0.5), -0.0295px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.4px 0 1px rgba(0, 30, 255, 0.5), -0.4021px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.48px 0 1px rgba(0, 30, 255, 0.5), -3.477px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.61px 0 1px rgba(0, 30, 255, 0.5), -1.612px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7px 0 1px rgba(0, 30, 255, 0.5), -0.701px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.9px 0 1px rgba(0, 30, 255, 0.5), -3.89px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.87px 0 1px rgba(0, 30, 255, 0.5), -3.87px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.23px 0 1px rgba(0, 30, 255, 0.5), -2.231px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.084px 0 1px rgba(0, 30, 255, 0.5), -0.08084px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.37px 0 1px rgba(0, 30, 255, 0.5), -2.3758px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.2px 0 1px rgba(0, 30, 255, 0.5), -2.202px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.863px 0 1px rgba(0, 30, 255, 0.5), -2.8638px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.4887px 0 1px rgba(0, 30, 255, 0.5), -0.48874px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.894px 0 1px rgba(0, 30, 255, 0.5), -1.8948px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.083px 0 1px rgba(0, 30, 255, 0.5), -0.0833px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.097px 0 1px rgba(0, 30, 255, 0.5), -0.0976px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.44px 0 1px rgba(0, 30, 255, 0.5), -3.44px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.184px 0 1px rgba(0, 30, 255, 0.5), -2.184px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.62px 0 1px rgba(0, 30, 255, 0.5), -2.62px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+}
+/*# sourceMappingURL=introPage.css.map */

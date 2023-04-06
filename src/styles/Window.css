@@ -1,0 +1,78 @@
+.windowContainer {
+  border: solid 3px #bf2323;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 750px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 500px;
+  overflow: auto;
+  border-top: 5px solid #bf2323;
+  margin-top: 1%;
+  opacity: 1;
+  background-color: #bf2323;
+  left: 0;
+  z-index: 4;
+  /*.windowNavBar {
+        position: sticky;
+        display: block;
+        top: 0px;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background-color: rgb(137, 47, 137);
+        opacity: 1;
+    }*/
+  font-family: "VCR OSD Mono";
+  color: white;
+}
+
+.windowContainer .windowContent {
+  position: relative;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+.windowContainer .lofi {
+  background-color: transparent;
+}
+
+.windowContainer .smt {
+  background-color: transparent;
+}
+
+.windowContainer .mario {
+  background-color: transparent;
+}
+
+.windowContainer button {
+  width: 10%;
+  height: 5%;
+  min-width: 60px;
+  min-height: 20px;
+  position: absolute;
+  right: 0;
+  font-family: "VCR OSD Mono";
+  background-color: purple;
+  color: white;
+  -webkit-animation: textShadow 15s infinite;
+          animation: textShadow 15s infinite;
+}
+
+.nonvisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+/*# sourceMappingURL=Window.css.map */

@@ -1,0 +1,25 @@
+.projects-container {
+  font-size: 25px;
+  color: purple;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin-inline: 15px;
+}
+
+.projects-container p {
+  font-size: 15px;
+  color: black;
+  text-align: justify;
+}
+
+.projects-container img {
+  width: 100%;
+}
+
+.projects-container a {
+  text-align: justify;
+  font-size: 15px;
+  color: purple;
+}
+/*# sourceMappingURL=Projects.css.map */

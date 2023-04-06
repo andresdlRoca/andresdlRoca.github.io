@@ -1,0 +1,35 @@
+.Display-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 93%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  opacity: 1;
+  /*grid-template-columns: 9% 9% 9%;
+    grid-template-rows: 17% 17% 17% 17%;
+    grid-gap: 50px 30px;*/
+}
+
+.Display-container .iconrow {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 500px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.Display-container .iconrow a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=ScreenDisplay.css.map */

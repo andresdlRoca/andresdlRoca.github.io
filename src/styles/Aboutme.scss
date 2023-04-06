@@ -1,0 +1,31 @@
+.aboutme-container {
+    font-size: 25px;
+    color: purple;
+    text-align: center;
+
+    p {
+        font-size: 15px;
+        color:black;
+        text-align: justify;
+    }
+
+    img {
+        width: 50%;
+        border-radius: 50px;
+        margin-block: 10px;
+    }
+
+    a{
+        text-align: justify;
+        font-size: 15px;
+        color: purple;
+    }
+
+    .contactinfo {
+        text-align: center;
+    }
+
+    width: 100%;
+    max-width: 700px;
+    margin-inline: 15px;
+}

@@ -1,0 +1,23 @@
+.projects-container {
+    font-size: 25px;
+    color: purple;
+    text-align: center;
+    p {
+        font-size: 15px;
+        color:black;
+        text-align: justify;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    a{
+        text-align: justify;
+        font-size: 15px;
+        color: purple;
+    }
+    width: 100%;
+    max-width: 700px;
+    margin-inline: 15px;
+}
