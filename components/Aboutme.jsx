@@ -27,7 +27,7 @@ export default function Aboutme() {
 			</p>  
 			<h3>Contact Info</h3>
 			<p className="contactinfo">andresdelaroca11@gmail.com</p>
-			<p className="contactinfo">+502 1234 5678</p> 
+			<p className="contactinfo">+502 3168 4376</p> 
 			<a href="https://github.com/andresdlRoca" target="_blank" rel="noreferrer">Github</a>            
 		</div>
 

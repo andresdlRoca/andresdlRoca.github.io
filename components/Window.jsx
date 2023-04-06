@@ -34,7 +34,7 @@ export default function Window({ name, windowName }) {
 					<Projects/>
 				</div>
 				<div className={name === "Lofi" ? "windowContent lofi visible" : "nonvisible"}>
-					<Spotify link={"https://open.spotify.com/playlist/60fjgeg72OSnHnVa4im6oq?si=78aea5b1b12248bb"}/>
+					<Spotify link={"https://open.spotify.com/playlist/60fjgeg72OSnHnVa4im6oq?si=8a6d8cb4e7fa4f3b"}/>
 				</div>
 				<div className={name === "smt" ? "windowContent smt visible" : "nonvisible"}>
 					<YouTube videoId="-Y9ozjlhrj8"/>
