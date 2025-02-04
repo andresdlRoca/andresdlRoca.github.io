@@ -3,19 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.jsx",
-  "homepage": "https://andresdlroca.github.io/andresdlroca.github.io",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "owasp": "owasp-dependency-check --project \"Proyecto3\" -f HTML"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.17.8",
+    "@babel/core": "^7.25.8",
+    "@babel/plugin-transform-runtime": "^7.25.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-jest": "^28.1.0",
@@ -23,20 +22,28 @@
     "css-loader": "^6.7.1",
     "eslint": "^8.16.0",
     "eslint-plugin-react": "^7.30.0",
-    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "mini-css-extract-plugin": "^2.6.0",
-    "webpack": "^5.70.0",
+    "webpack": "^5.95.0",
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "async": "^3.2.6",
     "file-loader": "^6.2.0",
+    "loader-utils": "^3.3.1",
+    "owasp-dependency-check": "^0.0.24",
     "prop-types": "^15.8.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-draggable": "^4.4.5",
-    "react-spotify-embed": "^0.2.3",
+    "react-spotify-embed": "^2.0.4",
     "react-youtube": "^9.0.1",
+    "regenerator-runtime": "^0.14.1",
+    "sonar-scanner": "^3.1.0",
     "webpack-dev-server": "^4.7.4"
   }
 }
